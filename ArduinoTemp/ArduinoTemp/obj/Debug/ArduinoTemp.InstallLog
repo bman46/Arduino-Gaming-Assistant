@@ -1,0 +1,36 @@
+﻿Installing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe assembly.
+Committing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe
+No public installers with the RunInstallerAttribute.Yes attribute could be found in the C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe assembly.
+Remove InstallState file because there are no installers.
+Installing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe
+Rolling back assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe
+An exception occurred during the Rollback phase of the System.ServiceProcess.ServiceProcessInstaller installer.
+System.NullReferenceException: Object reference not set to an instance of an object.
+An exception occurred during the Rollback phase of the installation. This exception will be ignored and the rollback will continue. However, the machine might not fully revert to its initial state after the rollback is complete.
+Installing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe
+Rolling back assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe

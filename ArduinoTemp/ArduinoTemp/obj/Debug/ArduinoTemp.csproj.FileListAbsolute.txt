@@ -1,0 +1,15 @@
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.TempComm.resources
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.csproj.GenerateResource.Cache
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.csproj.CoreCompileInputs.cache
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe.config
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.pdb
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.pdb
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe.manifest
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.application
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.exe.manifest
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.application
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.ProjectInstaller.resources
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.csprojResolveAssemblyReference.cache
