@@ -1,10 +1,3 @@
-/*************************************************************************
-* Demo sketch of Arduino Text Display Library for Multiple LCDs
-* Distributed under GPL v2.0
-* Copyright (c) 2013 Stanley Huang <stanleyhuangyc@live.com>
-* All rights reserved.
-*************************************************************************/
-
 #include <Arduino.h>
 #include <Wire.h>
 #include <MultiLCD.h>
