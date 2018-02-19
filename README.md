@@ -2,10 +2,11 @@
 A windows service application that communicates with an arduino and sends temperature information about GPU, Arduino recives data through serial and siplays t on a oled screen.
 ## Setup:
   #### Arduino:
+  - Verify that [MultiLCD Library](https://github.com/stanleyhuangyc/MultiLCD) in installed
   - Upload Arduino TempDisplay.ino file to arduino.
   - Connect I2C OLED display power to corresoponding power connections
   - Connect SCL to A5
-  - Connect SDA to A4 
+  - Connect SDA to A4
   #### Install on Windows PC:
   - [Download/Install Visual Studio 2017](https://www.visualstudio.com/downloads/)
   - Open ArduinoTemp.sln with Visual Studio
