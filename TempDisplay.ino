@@ -12,8 +12,12 @@ LCD_SSD1306 lcd; /* for SSD1306 OLED module */
 void setup()
 {
   Serial.begin(9600);
-  delay(1000);
   lcd.begin();
+  lcd.setCursor(23, 0);
+  lcd.setFont(FONT_SIZE_XLARGE);
+  lcd.print("Starting..");
+  delay(10000);
+  lcd.clear();
 }
 
 void loop()
@@ -38,5 +42,3 @@ void loop()
           
         }
  }
-
-
