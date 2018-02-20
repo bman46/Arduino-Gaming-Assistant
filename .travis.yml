@@ -1,0 +1,9 @@
+matrix:
+  include:
+    - language: C#
+      before_script:
+        - cd GPU-Arduino-Temp-Monitor/ArduinoTemp
+
+    - language: C++
+      before_script:
+        - cd GPU-Arduino-Temp-Monitor/Arduino
