@@ -1,5 +1,5 @@
 # GPU Temp Monitor:
-[![Build Status](https://travis-ci.org/bman46/GPU-Arduino-Temp-Monitor.svg?branch=master)](https://travis-ci.org/bman46/GPU-Arduino-Temp-Monitor)
+[![Build status](https://ci.appveyor.com/api/projects/status/1mwgon2hh7qqcg89?svg=true)](https://ci.appveyor.com/project/bman46/gpu-arduino-temp-monitor)
 
 A windows service application that communicates with an arduino and sends temperature information about GPU Temp, Arduino recives data through serial and displays it on a OLED screen.
 ## Setup:
