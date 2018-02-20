@@ -1,2 +1,3 @@
 language: csharp
+before_script: cd GPU-Arduino-Temp-Monitor/ArduinoTemp
 solution: ArduinoTemp.sln
