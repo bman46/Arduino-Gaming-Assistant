@@ -4,7 +4,7 @@
 A windows service application that communicates with an arduino and sends temperature information about GPU Temp, Arduino recives data through serial and displays it on a OLED screen.
 ## Setup:
   #### Arduino:
-  - Verify that [MultiLCD Library](https://github.com/stanleyhuangyc/MultiLCD) in installed
+  - Verify that [MultiLCD Library](https://github.com/stanleyhuangyc/MultiLCD) is installed
   - Upload Arduino TempDisplay.ino file to arduino.
   - Connect I2C OLED display power to corresoponding power connections
   - Connect SCL to A5
