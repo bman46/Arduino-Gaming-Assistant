@@ -26,6 +26,10 @@ void loop()
        // read the incoming byte:
        String incomingByte = Serial.readString();
        // read temp
+       // fix 4 digit temp output issue
+       if (incomingByte.length() < 3){
+        
+       
           lcd.setCursor(35, 0);
           lcd.setFont(FONT_SIZE_SMALL);
           lcd.print("GPU Temp:");
@@ -39,6 +43,8 @@ void loop()
           lcd.print("C");
           delay(4000);
           lcd.clear();
-          
+
+        }
         }
  }
+
