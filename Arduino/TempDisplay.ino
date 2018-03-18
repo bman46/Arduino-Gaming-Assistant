@@ -9,6 +9,8 @@ LCD_SSD1306 lcd; /* for SSD1306 OLED module */
 //LCD_ZTOLED lcd; /* for ZT OLED module */
 //LCD_ILI9325D lcd; /* for Itead 2.8" TFT shield */
 
+
+
 void setup()
 {
   Serial.begin(9600);
@@ -28,8 +30,9 @@ void loop()
        // read temp
        // fix 4 digit temp output issue
        if (incomingByte.length() < 3){
-        
-       
+        //check to see if it is nessary to clear and change display
+          
+          lcd.clear();
           lcd.setCursor(35, 0);
           lcd.setFont(FONT_SIZE_SMALL);
           lcd.print("GPU Temp:");
@@ -42,9 +45,9 @@ void loop()
           lcd.setFont(FONT_SIZE_SMALL);
           lcd.print("C");
           delay(4000);
-          lcd.clear();
+         
+        }
+       }
 
-        }
-        }
  }
 
