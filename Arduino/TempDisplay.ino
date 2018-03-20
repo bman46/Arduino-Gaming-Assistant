@@ -30,8 +30,7 @@ void loop()
        // read temp
        // fix 4 digit temp output issue
        if (incomingByte.length() < 3){
-        //check to see if it is nessary to clear and change display
-          
+
           lcd.clear();
           lcd.setCursor(35, 0);
           lcd.setFont(FONT_SIZE_SMALL);
@@ -48,6 +47,8 @@ void loop()
          
         }
        }
+       else {
+        lcd.clear();
+       }
 
  }
-
