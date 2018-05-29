@@ -13,3 +13,8 @@ C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.applic
 C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.ProjectInstaller.resources
 C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\OpenHardwareMonitorLib.dll
 C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.csprojResolveAssemblyReference.cache
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\obj\Debug\ArduinoTemp.csproj.CopyComplete
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\CSGSI.dll
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\CSGSI.xml
+C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\Newtonsoft.Json.xml
