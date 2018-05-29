@@ -1,6 +1,8 @@
 #include <Arduino.h>
 #include <Wire.h>
 #include <MultiLCD.h>
+#include <stdio.h>
+#include <string.h>
 
 
 LCD_SSD1306 lcd; /* for SSD1306 OLED module */
@@ -18,7 +20,7 @@ void setup()
   lcd.setCursor(23, 0);
   lcd.setFont(FONT_SIZE_XLARGE);
   lcd.print("Starting..");
-  delay(10000);
+  delay(3000);
   lcd.clear();
 }
 
@@ -27,28 +29,79 @@ void loop()
    if (Serial.available() > 0) {
        // read the incoming byte:
        String incomingByte = Serial.readString();
-       // read temp
-       // fix 4 digit temp output issue
-       if (incomingByte.length() < 3){
-
-          lcd.clear();
-          lcd.setCursor(35, 0);
-          lcd.setFont(FONT_SIZE_SMALL);
-          lcd.print("GPU Temp:");
-          
-          lcd.setCursor(45, 2.5);
-          lcd.setFont(FONT_SIZE_XLARGE);
-          lcd.print(incomingByte);
-
-          lcd.setCursor(70, 2.6);
-          lcd.setFont(FONT_SIZE_SMALL);
-          lcd.print("C");
-          delay(4000);
-         
-        }
+       
+       //coversion from string to char:
+       int str_len = incomingByte.length() + 1; 
+       char data[str_len];
+       incomingByte.toCharArray(data, str_len);
+       
+       //split string here:
+       char *i;
+       char *Mode = strtok_r(data,",",&i);
+       char *temp = strtok_r(NULL,",",&i);
+       char *kills = strtok_r(NULL,",",&i);
+       char *auth = strtok_r(NULL,",",&i);
+       //for tests:
+       // Serial.print("Mode");
+       // Serial.print(Mode);
+       // Serial.print("temp");
+       // Serial.print(temp);
+       // Serial.print("kills");
+       // Serial.print(kills);
+       
+       //normal mode:
+       if (strcmp(auth, "99") == 0){
+           if (Mode[0] == '0'){
+      
+              lcd.clear();
+              lcd.setCursor(35, 0);
+              lcd.setFont(FONT_SIZE_SMALL);
+              lcd.print("GPU Temp:");
+              
+              lcd.setCursor(45, 1.8);
+              lcd.setFont(FONT_SIZE_XLARGE);
+              lcd.print(temp);
+      
+              lcd.setCursor(70, 1.9);
+              lcd.setFont(FONT_SIZE_SMALL);
+              lcd.print("C");
+              
+              delay(4000);
+      
+              
+             
+            }else{
+              //CS:GO mode:
+              
+              //normal mode stuff to test and format CSGO stuff, move back when done:
+              lcd.clear();
+              lcd.setCursor(35, 0);
+              lcd.setFont(FONT_SIZE_SMALL);
+              lcd.print("GPU Temp:");
+              
+              lcd.setCursor(45, 1.5);
+              lcd.setFont(FONT_SIZE_LARGE);
+              lcd.print(temp);
+      
+              lcd.setCursor(70, 1.5);
+              lcd.setFont(FONT_SIZE_SMALL);
+              lcd.print("C");
+      
+              lcd.setCursor(38, 4.5);
+              lcd.setFont(FONT_SIZE_SMALL);
+              lcd.print("Kills:");
+      
+              lcd.setCursor(45, 5.5);
+              lcd.setFont(FONT_SIZE_LARGE);
+              lcd.print(kills);
+              
+              delay(4000);
+            }        
        }
-       else {
-        lcd.clear();
-       }
-
+       //end of "secured" zone
+    }else{
+      lcd.clear();
+    }
  }
+
+
