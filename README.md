@@ -1,7 +1,7 @@
-# GPU Temp Monitor:
+# Arduino Gaming Assistant:
 [![Build status](https://ci.appveyor.com/api/projects/status/1mwgon2hh7qqcg89?svg=true)](https://ci.appveyor.com/project/bman46/gpu-arduino-temp-monitor)
 
-A windows service application that communicates with an arduino and sends temperature information about GPU Temp, Arduino recives data through serial and displays it on a OLED screen.
+A windows service application that communicates with an arduino and sends temperature information about GPU Temp and CS:GO kills, Arduino recives data through serial and displays it on a OLED screen. This was formerly known as ArduinoTemp.
 ## Setup:
   #### Arduino:
   - Verify that [MultiLCD Library](https://github.com/stanleyhuangyc/MultiLCD) is installed
@@ -27,3 +27,8 @@ A windows service application that communicates with an arduino and sends temper
   - Type in to console: ``` installutil /u ArduinoTemp.exe ```
   - Open services.msc and verify ArduinoTemp is no longer there.
   - If updating, follow the install instructions after completing the uninstall.
+  #### Add .cfg Files to CS:GO:
+  - Download the gamestate_integration_ArduinoTemp.cfg
+  - Place the file in the CS:GO cfg folder:
+    - for example: ```D:\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\```
+  - ##### Note: This should not get you VAC banned as it is supported by valve. However, dont go messing around in other folders unless you know what your doing. [Read More Here](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Game_State_Integration)
