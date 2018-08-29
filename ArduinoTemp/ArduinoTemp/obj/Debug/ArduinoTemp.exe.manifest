@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ArduinoTemp.exe" size="8672">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ArduinoTemp.exe" size="9184">
       <assemblyIdentity name="ArduinoTemp" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>IvYRL+UL6k3F7y+8cX+Tdfa6pn04SvzCLHSThwkJ+8o=</dsig:DigestValue>
+        <dsig:DigestValue>ysGZqkXWqBwiAc7FKSdzmM3m9S32isRXYIRb0+Y19yo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

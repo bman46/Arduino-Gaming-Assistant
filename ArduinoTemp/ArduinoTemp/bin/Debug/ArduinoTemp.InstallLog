@@ -296,3 +296,130 @@ Affected parameters are:
    logtoconsole = 
    logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
    assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Uninstalling assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Removing EventLog source ArduinoTemp.
+An exception occurred during the uninstallation of the System.Diagnostics.EventLogInstaller installer.
+System.Security.SecurityException: Requested registry access is not allowed.
+An exception occurred while uninstalling. This exception will be ignored and the uninstall will continue. However, the application might not be fully uninstalled after the uninstall is complete.
+Uninstalling assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Removing EventLog source ArduinoTemp.
+Service ArduinoTemp is being removed from the system...
+Service ArduinoTemp was successfully removed from the system.
+Installing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Installing service ArduinoTemp...
+Service ArduinoTemp has been successfully installed.
+Creating EventLog source ArduinoTemp in log Application...
+Committing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Uninstalling assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Removing EventLog source ArduinoTemp.
+Service ArduinoTemp is being removed from the system...
+Service ArduinoTemp was successfully removed from the system.
+Installing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Installing service ArduinoTemp...
+Service ArduinoTemp has been successfully installed.
+Creating EventLog source ArduinoTemp in log Application...
+Committing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Installing assembly 'c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Installing service ArduinoTemp...
+Creating EventLog source ArduinoTemp in log Application...
+Rolling back assembly 'c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Restoring event log to previous state for source ArduinoTemp.
+Uninstalling assembly 'c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Removing EventLog source ArduinoTemp.
+Service ArduinoTemp is being removed from the system...
+Service ArduinoTemp was successfully removed from the system.
+Installing assembly 'c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Installing service ArduinoTemp...
+Service ArduinoTemp has been successfully installed.
+Creating EventLog source ArduinoTemp in log Application...
+Committing assembly 'c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = c:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Uninstalling assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Removing EventLog source ArduinoTemp.
+Service ArduinoTemp is being removed from the system...
+Service ArduinoTemp was successfully removed from the system.
+Installing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Installing service ArduinoTemp...
+Service ArduinoTemp has been successfully installed.
+Creating EventLog source ArduinoTemp in log Application...
+Committing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Uninstalling assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Removing EventLog source ArduinoTemp.
+Service ArduinoTemp is being removed from the system...
+Service ArduinoTemp was successfully removed from the system.
+Installing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe
+Installing service ArduinoTemp...
+Service ArduinoTemp has been successfully installed.
+Creating EventLog source ArduinoTemp in log Application...
+Committing assembly 'C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.InstallLog
+   assemblypath = C:\Users\brend\source\repos\ArduinoTemp\ArduinoTemp\bin\Debug\ArduinoTemp.exe

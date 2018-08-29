@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 using System.Management;
 using OpenHardwareMonitor.Hardware;
 using System.IO;
-using System.Diagnostics;
 using Newtonsoft.Json.Linq;
 using System.Net;
 using CSGSI;
 using CSGSI.Events;
 using CSGSI.Nodes;
+using System.IO.Ports;
 
 namespace ArduinoTemp
 {
@@ -38,6 +38,7 @@ namespace ArduinoTemp
                 try
                 {
                     serialPort1.Open();
+                    serialPort1.DataReceived += new SerialDataReceivedEventHandler(TimeCmd);
                 }
                 catch
                 {
@@ -46,6 +47,7 @@ namespace ArduinoTemp
                     System.Threading.Thread.Sleep(120000);
                 }
             }
+            
 
 
 
@@ -53,7 +55,7 @@ namespace ArduinoTemp
             CSGOint();
             //Start main "loop":
             System.Timers.Timer timer = new System.Timers.Timer();
-            timer.Interval = 5000; // 5 seconds  
+            timer.Interval = 3000; // 5 seconds  
             timer.Elapsed += new System.Timers.ElapsedEventHandler(this.OnTimer);
             timer.Start();
         }
@@ -79,6 +81,7 @@ namespace ArduinoTemp
         //to loop:
         public void OnTimer(object sender, System.Timers.ElapsedEventArgs args)
         {
+
             // Change CPU to true to read CPU temps, will need to modify code and elevate permissions. Currently Set to GPU
             Computer computer = new Computer() { CPUEnabled = false, GPUEnabled = true };
             computer.Open();
@@ -91,10 +94,21 @@ namespace ArduinoTemp
                     // Celsius is default unit
                     if (sensor.SensorType == SensorType.Temperature)
                     {
+                        // convert to unix time:
+
                         string temps = Convert.ToString(sensor.Value);
                         string.Format("{0:###}", temps);
+
+                        if (TimeSet == 1)
+                        {
+                            Int32 unixTimestamp = (Int32)(DateTime.Now.Subtract(new DateTime(1970, 1, 1))).TotalSeconds;
+                            serialPort1.Write(String.Format("{0} ", unixTimestamp));
+                            System.Threading.Thread.Sleep(500);
+                            TimeSet = 0;
+                        }
                         if (kills == -1)
                         {
+
                             //99 is authentication value to ensure that the string is not invalid
                             serialPort1.Write(String.Format("0,{0},{1},99", temps, kills));
                         }
@@ -135,6 +149,15 @@ namespace ArduinoTemp
         public void OnNewGameState(GameState gs)
         {
             kills = gs.Player.State.RoundKills;
+        }
+        public int TimeSet = 0;
+        public void TimeCmd(
+                        object sender,
+                        SerialDataReceivedEventArgs e)
+        {
+            //tell the main loop to send the time.
+            TimeSet = 1;
+            return;
         }
     }
 }
