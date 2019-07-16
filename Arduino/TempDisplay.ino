@@ -232,6 +232,11 @@ void loop()
               } else {
                 PM = false;
               }
+              if(timeh>=10){
+                lcd.setCursor(25, 1.8);
+              } else {
+                lcd.setCursor(35, 1.8);
+              }
               lcd.print(timeh);
               lcd.setCursor(45, 1.8);
               lcd.print(":");
@@ -244,14 +249,6 @@ void loop()
               } else {
                 lcd.print("am");
               }
-              lcd.setCursor(38, 4.5);
-              lcd.setFont(FONT_SIZE_SMALL);
-              lcd.print("Kills:");
-      
-              lcd.setCursor(45, 5.5);
-              lcd.setFont(FONT_SIZE_LARGE);
-              lcd.print(kills);
-              delay(4000);
               
             }        
        }
