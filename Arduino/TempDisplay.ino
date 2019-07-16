@@ -134,21 +134,7 @@ void loop()
        if (incomingByte != ""){
         gettime();
        }
-       
-       //for tests:
-       //Serial.print("Mode");
-       //Serial.print(Mode);
-       // Serial.print("temp");
-       // Serial.print(temp);
-       // Serial.print("kills");
-       // Serial.print(kills);
-       //Serial.print("current time: ");
-       //Serial.print(hour());
-       //Serial.print(":");
-       //Serial.print(minute());
-       //Serial.print("Now command: ");
-       //Serial.print();
-       
+              
        //normal mode:
        if (strcmp(auth, "99") == 0){
            if (Mode[0] == '0'){
@@ -174,19 +160,37 @@ void loop()
               lcd.setFont(FONT_SIZE_SMALL);
               lcd.print("Time:");
               
-              lcd.setCursor(30, 1.8);
+              lcd.setCursor(25, 1.8);
               lcd.setFont(FONT_SIZE_LARGE);
-              lcd.print(hour());
-              lcd.setCursor(50, 1.8);
+              int timeh = hour();
+              bool PM;
+              if(timeh>12){
+               PM = true;
+               timeh-=12;
+              } else {
+                PM = false;
+              }
+              if(timeh>=10){
+                lcd.setCursor(25, 1.8);
+              } else {
+                lcd.setCursor(35, 1.8);
+              }
+              lcd.print(timeh);
+              lcd.setCursor(45, 1.8);
               lcd.print(":");
-              lcd.setCursor(58, 1.8);
+              lcd.setCursor(53, 1.8);
               lcd.print(minute());
-              delay(4000);
+              lcd.setCursor(80, 1.8);
+              lcd.setFont(FONT_SIZE_SMALL);
+              if(PM){
+                lcd.print("pm");
+              } else {
+                lcd.print("am");
+              }
              
             }else{
               //CS:GO mode:
               
-              //normal mode stuff to test and format CSGO stuff, move back when done:
               lcd.clear();
               lcd.setCursor(35, 0);
               lcd.setFont(FONT_SIZE_SMALL);
@@ -218,14 +222,37 @@ void loop()
               lcd.setFont(FONT_SIZE_SMALL);
               lcd.print("Time:");
               
-              lcd.setCursor(30, 1.8);
+              lcd.setCursor(25, 1.8);
               lcd.setFont(FONT_SIZE_LARGE);
-              lcd.print(hour());
-              lcd.setCursor(50, 1.8);
+              int timeh = hour();
+              bool PM;
+              if(timeh>12){
+               PM = true;
+               timeh-=12;
+              } else {
+                PM = false;
+              }
+              lcd.print(timeh);
+              lcd.setCursor(45, 1.8);
               lcd.print(":");
-              lcd.setCursor(58, 1.8);
+              lcd.setCursor(53, 1.8);
               lcd.print(minute());
+              lcd.setCursor(80, 1.8);
+              lcd.setFont(FONT_SIZE_SMALL);
+              if(PM){
+                lcd.print("pm");
+              } else {
+                lcd.print("am");
+              }
+              lcd.setCursor(38, 4.5);
+              lcd.setFont(FONT_SIZE_SMALL);
+              lcd.print("Kills:");
+      
+              lcd.setCursor(45, 5.5);
+              lcd.setFont(FONT_SIZE_LARGE);
+              lcd.print(kills);
               delay(4000);
+              
             }        
        }
 
