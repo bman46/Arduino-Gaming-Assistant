@@ -32,4 +32,4 @@ A windows service application that communicates with an arduino and sends temper
   - Place the file in the CS:GO cfg folder:
     - for example: ```D:\Steam\steamapps\common\Counter-Strike Global Offensive\csgo\cfg\```
   - CS:GO Support thanks to the [CSGSI Library](https://github.com/rakijah/CSGSI)
-  - ##### Note: This should not get you VAC banned as it is supported by valve. However, dont go messing around in other folders unless you know what your doing. [Read More Here](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Game_State_Integration)
+  - ##### Note: This should not get you VAC banned as it is supported by valve. However, dont go messing around in other folders unless you know what your doing. [Read More Here](https://developer.valvesoftware.com/wiki/Counter-Strike:_Global_Offensive_Game_State_Integration) 
