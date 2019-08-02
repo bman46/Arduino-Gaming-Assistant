@@ -19,23 +19,7 @@ namespace ArduinoTemp
 
         protected override void OnStart(string[] args)
         {
-            // Set up a timer to trigger every minute.  
-            while (!serialPort1.IsOpen)
-            {
-                try
-                {
-                    serialPort1.Open();
-                    serialPort1.DataReceived += new SerialDataReceivedEventHandler(TimeCmd);
-                    System.Threading.Thread.Sleep(1000);
-                }
-                catch
-                {
-                    // serialPort1.Write(outputTemp);
-                    // If not connected or other error, wait 1 minute:
-                    System.Threading.Thread.Sleep(120000);
-                }
-                
-            }
+            Connect();
 
             //start CSGO Stuff:
             CSGOint();
@@ -46,28 +30,34 @@ namespace ArduinoTemp
             timer.Start();
         }
 
+        private void Connect()
+        {
+            while (!serialPort1.IsOpen)
+            {
+                try
+                {
+                    serialPort1.Open();
+                    serialPort1.DataReceived += new SerialDataReceivedEventHandler(TimeCmd);
+                }
+                catch
+                {
+                    // If not connected or other error, wait 1 minute:
+                    System.Threading.Thread.Sleep(120000);
+                }
+
+            }
+        }
+
         protected override void OnStop()
         {
             serialPort1.Close();
         }
-        public bool CsProgram()
-        {
-            //see if CS:GO is running
-            Process[] pname = Process.GetProcessesByName("csgo");
-            if (pname.Length > 0)
-            {
 
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
         //to loop:
         public void OnTimer(object sender, System.Timers.ElapsedEventArgs args)
         {
-
+            //if disconnected, connect.
+            Connect();
             // Change CPU to true to read CPU temps, will need to modify code and elevate permissions. Currently Set to GPU
             Computer computer = new Computer() { CPUEnabled = false, GPUEnabled = true };
             computer.Open();
@@ -112,10 +102,6 @@ namespace ArduinoTemp
                 }
 
             }
-
-
-
-
         }
         public void CSGOint()
         {
