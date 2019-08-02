@@ -1,5 +1,5 @@
 # Arduino Gaming Assistant:
-[![Build status](https://ci.appveyor.com/api/projects/status/1mwgon2hh7qqcg89?svg=true)](https://ci.appveyor.com/project/bman46/gpu-arduino-temp-monitor)
+[![Build status](https://ci.appveyor.com/api/projects/status/3o4bmbnyjayd55rq?svg=true)](https://ci.appveyor.com/project/bman46/arduino-gaming-assistant)
 
 A windows service application that communicates with an arduino and sends temperature information about GPU Temp and CS:GO kills, Arduino recives data through serial and displays it on a OLED screen. This was formerly known as ArduinoTemp.
 ## Setup:
